@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoría y Servicios Digitales</title>
+  <link rel="stylesheet" href="recursos/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado fijo superior (sticky) -->
+  <header class="encabezado-sticky">
+    <div class="bloque-marca">
+      <img src="./recursos/imagenes/logo.png.jpg" alt="Logo de MiConsultora" class="logo-imagen">
+      <span class="logo-texto">MiConsultora</span>
+    </div>
+    <nav class="navegacion">
+      <a href="#inicio">Inicio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="contenedor-principal">
+    
+    <!-- Sección principal con banner local -->
+    <section id="inicio" class="seccion-bienvenida">
+      <div class="banner-inicio">
+        <img src="./recursos/imagenes/banner.jpg.jpg" alt="Oficina corporativa moderna">
+      </div>
+      <div class="contenido-bienvenida">
+        <h1>Servicios de Consultoría y Asesoramiento Digital</h1>
+        <p>Brindamos soluciones integrales adaptadas a las necesidades de tu organización. Completa el formulario a continuación para recibir atención personalizada.</p>
+      </div>
+    </section>
+
+    <!-- Formulario accesible con vinculación de etiquetas y atributos ARIA -->
+    <section id="contacto" class="seccion-formulario">
+      <h2>Formulario de Contacto</h2>
+      
+      <form action="#" method="POST" class="formulario-contacto" novalidate>
+        
+        <div class="grupo-campo">
+          <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            required 
+            aria-required="true"
+            aria-describedby="ayuda-nombre"
+          >
+          <small id="ayuda-nombre" class="texto-ayuda">Ingrese su nombre y apellido completo.</small>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            aria-required="true"
+          >
+        </div>
+
+        <div class="grupo-campo">
+          <label for="motivo">Motivo de consulta</label>
+          <select id="motivo" name="motivo">
+            <option value="general">Consulta general</option>
+            <option value="presupuesto">Solicitar presupuesto</option>
+            <option value="soporte">Soporte técnico</option>
+          </select>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+          <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
+        </div>
+
+        <!-- Alerta accesible para lectores de pantalla -->
+        <div role="alert" aria-live="polite" class="mensaje-alerta">
+          Los campos marcados con (*) son obligatorios.
+        </div>
+
+        <button type="submit" class="boton-envio">Enviar Consulta</button>
+      </form>
+    </section>
+
+    <!-- Tarjeta con imagen local e insignia absoluta -->
+    <section class="tarjeta-demostrativa">
+      <div class="contenido-tarjeta">
+        <img src="./recursos/imagenes/novedad.jpg.jpg" alt="Equipo de trabajo colaborativo" class="imagen-tarjeta">
+        <div>
+          <h3>Novedades y Anuncios</h3>
+          <p>Sumamos nuevos canales de atención para responder tus consultas con mayor agilidad. Conoce nuestros servicios destacados del mes.</p>
+        </div>
+      </div>
+      
+      <span class="insignia-absoluta">NUEVO</span>
+    </section>
+
+  </main>
+
+  <!-- Botón de contacto flotante (fixed) -->
+  <a href="https://wa.me/5493510000000" class="boton-flotante-fixed" aria-label="Contactar por WhatsApp" target="_blank">
+    💬
+  </a>
+
+</body>
+</html>

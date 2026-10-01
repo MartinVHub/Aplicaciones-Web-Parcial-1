@@ -1,0 +1,163 @@
+/* Reseteo general */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #333333;
+}
+
+.contenedor-principal {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Encabezado fijo en la parte superior */
+
+.encabezado-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e293b;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.encabezado-sticky .navegacion a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* Estilos del formulario de contacto */
+
+.seccion-formulario {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  margin: 30px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Estilo accesible para el enfoque por teclado */
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #2563eb;
+  border-color: transparent;
+}
+
+.texto-ayuda {
+  color: #666666;
+  font-size: 0.8rem;
+}
+
+.mensaje-alerta {
+  background-color: #eff6ff;
+  border-left: 4px solid #2563eb;
+  padding: 10px;
+  font-size: 0.85rem;
+  color: #1e40af;
+}
+
+.boton-envio {
+  align-self: flex-start;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton-envio:hover {
+  background-color: #1d4ed8;
+}
+
+/* Posicionamiento relativo y absoluto para la insignia */
+
+.tarjeta-demostrativa {
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 80px;
+}
+
+.insignia-absoluta {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón flotante fijo en la esquina del viewport */
+
+.boton-flotante-fixed {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  background-color: #25d366;
+  color: #ffffff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
